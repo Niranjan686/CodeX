@@ -11,7 +11,7 @@ export function customCors(
         "Access-Control-Allow-Headers",
         "Access-Control-Allow-Headers, content-type, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization"
     );
-    res.setHeader("Access-Control-Allow-Credentials", "false");
+    res.setHeader("Access-Control-Allow-Credentials", "ture");
     res.setHeader(
         "Access-Control-Allow-Methods",
         "GET, POST, PUT, PATCH, OPTIONS, DELETE"
