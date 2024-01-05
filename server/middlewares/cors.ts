@@ -1,16 +1,17 @@
-import express, { Request, Response, NextFunction } from "express";
+import { NextFunction } from "express";
+import express from "express";
 
 export function customCors(
-    req: Request,
-    res: Response,
+    req: express.Request,
+    res: express.Response,
     next: NextFunction
 ) {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader(
         "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+        "Access-Control-Allow-Headers, content-type, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization"
     );
-    res.setHeader("Access-Control-Allow-Credentials", "true");
+    res.setHeader("Access-Control-Allow-Credentials", "ture");
     res.setHeader(
         "Access-Control-Allow-Methods",
         "GET, POST, PUT, PATCH, OPTIONS, DELETE"
@@ -21,18 +22,5 @@ export function customCors(
             body: "OK",
         });
     }
-
     next();
 }
-
-const app = express();
-
-// Apply customCors middleware globally
-app.use(customCors);
-
-// Your routes and other middleware go here
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
