@@ -91,23 +91,13 @@ const LandingPage = ({
                         Ready to conquer complex challenges? Explore our Problem
                         List now!
                     </p>
-                    <div className="absolute md:left-[850px] top-[450px] left-1/2 -translate-x-1/2 z-50">
+                    <div className="absolute md:top-[450px] top-[550px] left-1/2 -translate-x-1/2 z-50">
                         <Link
                             to="/problemset"
                             className="relative ml-[8px] font-bold inline-block bg-gradient-to-r from-orange-500 to-red-600 rounded-md text-black text-[18px] hover:bg-red-800"
                         >
                             <div className="w-full h-full bg-black text-white py-[6px] px-[16px] rounded-[6px] border border-black hover:bg-[#00000000] hover:border-[#00000000] hover:text-black transition active:bg-red-700">
-                                 Problem List    
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="absolute md:left-[590px] top-[450px] left-1/2 -translate-x-1/2 z-50">
-                        <Link
-                            to="./Interview"
-                            className="relative ml-[8px] font-bold inline-block bg-gradient-to-r from-orange-500 to-red-600 rounded-md text-black text-[18px] hover:bg-red-800"
-                        >
-                            <div className="w-full h-full bg-black text-white py-[6px] px-[16px] rounded-[6px] border border-black hover:bg-[#00000000] hover:border-[#00000000] hover:text-black transition active:bg-red-700">
-                                InterView
+                                Problem List
                             </div>
                         </Link>
                     </div>
