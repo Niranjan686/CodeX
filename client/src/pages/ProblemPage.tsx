@@ -8,6 +8,7 @@ import ProblemNavbar from "../components/ProblemNavbar";
 import ProblemDescription from "../components/ProblemDescription";
 import { useNavigate, useParams } from "react-router-dom";
 import Editorial from "../components/Editorial";
+import Solution from "../components/Solution";
 import MainHeading from "../components/MainHeading";
 import Submissions from "../components/Submissions";
 import { API_URL } from "../App";

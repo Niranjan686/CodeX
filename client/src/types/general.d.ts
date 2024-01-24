@@ -28,6 +28,9 @@ interface DescriptionData {
 interface EditorialData {
     editorial_body: string;
 }
+interface SolutionData{
+    solution_body:String;
+}
 
 interface Json {
     main: ProblemData;

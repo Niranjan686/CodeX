@@ -3,6 +3,7 @@ type ProblemData = CodeData & DescriptionData;
 interface Problem {
     main: ProblemData;
     editorial: EditorialData;
+    solution:SolutionData;
     test: any[][];
     function_name: string;
 }
@@ -35,10 +36,14 @@ interface DescriptionData {
 interface EditorialData {
     editorial_body: string;
 }
+interface SolutionData{
+    solution_body:string;
+}
 
 interface Json {
     main: ProblemData;
     editorial: EditorialData;
+    solution:SolutionData;
     test: any[][];
     function_name: string;
 }

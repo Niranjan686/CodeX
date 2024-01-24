@@ -21,7 +21,6 @@ const SignupPage = ({
     const [message, setMessage] = useState("");
     const [isLoading, setisLoading] = useState<boolean>(false);
     const navigate = useNavigate();
-
     const handleSignUp = () => {
         setisLoading(true);
         try {

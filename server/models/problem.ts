@@ -3,6 +3,7 @@ import mongoose, { Document } from "mongoose";
 export interface DProblem extends Document {
     main: ProblemData;
     editorial: EditorialData;
+    solution:SolutionData;
     test: any[][];
     function_name: string;
 }
@@ -27,6 +28,9 @@ const problemSchema = new mongoose.Schema<DProblem>({
     },
     editorial: {
         editorial_body: String,
+    },
+    solution:{
+        solution_body:String,
     },
     test: Array,
     function_name: String,
