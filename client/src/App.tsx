@@ -11,7 +11,7 @@ import SettingPage from "./pages/SettingPage";
 import Interview from "./pages/Interview";
 export const TOKEN_STORAGE_KEY = "authToken";
 export const ID_STORAGE_KEY = "id";
-export const API_URL = "code-x-tau-lilac.vercel.app";
+export const API_URL = "https://code-x-backend.vercel.app";
 //export const API_URL = "http://localhost:80";
 
 function App() {
